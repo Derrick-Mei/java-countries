@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 @RestController
 @RequestMapping("/age")
@@ -26,10 +27,10 @@ public class AgeController
         return countriesOverMedian;
     }
 
-    public Country YoungestAndOldest(String YO)
+    private Country YoungestAndOldest(String YO)
     {
         ArrayList<Country> sortedByAge = JavaCountriesApplication.countriesList.countryList;
-        sortedByAge.sort((a, b) -> a.getMedianAge() - b.getMedianAge());
+        sortedByAge.sort(Comparator.comparingInt(Country::getMedianAge));
 
         if (YO.equalsIgnoreCase("youngest"))
         {

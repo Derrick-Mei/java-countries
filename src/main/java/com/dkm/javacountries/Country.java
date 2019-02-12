@@ -4,10 +4,10 @@ package com.dkm.javacountries;
 
 public class Country
 {
-    String name;
-    double population;
-    double landMass;
-    int medianAge;
+    private String name;
+    private double population;
+    private double landMass;
+    private int medianAge;
 
     public Country(String name, double population, double landMass, int medianAge)
     {

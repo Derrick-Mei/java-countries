@@ -4,9 +4,9 @@ package com.dkm.javacountries;
 
 import java.util.ArrayList;
 
-public class CountryListCreator
+class CountryListCreator
 {
-    public ArrayList<Country> countryList = new ArrayList<>();
+    public final ArrayList<Country> countryList = new ArrayList<>();
 
     public CountryListCreator()
     {

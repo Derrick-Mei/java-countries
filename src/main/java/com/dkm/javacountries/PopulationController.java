@@ -51,7 +51,7 @@ public class PopulationController
 //        return answer;
 //    }
 
-    public Country sortAndReturnByIndex(String maxmin)
+    private Country sortAndReturnByIndex(String maxmin)
     {
         ArrayList<Country> sortedByPopulation = JavaCountriesApplication.countriesList.countryList;
         sortedByPopulation.sort((a,b) -> (int) (b.getPopulation() - a.getPopulation()));

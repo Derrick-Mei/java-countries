@@ -10,10 +10,5 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class JavaCountriesApplicationTests
 {
 
-    @Test
-    public void contextLoads()
-    {
-    }
-
 }
 

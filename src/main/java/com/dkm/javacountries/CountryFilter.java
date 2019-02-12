@@ -2,7 +2,7 @@
 
 package com.dkm.javacountries;
 
-public interface CountryFilter
+interface CountryFilter
 {
     boolean test(Country e);
 }
