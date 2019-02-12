@@ -17,13 +17,13 @@ public class Country
         this.medianAge = medianAge;
     }
 
-    public Country(Country somethingToClone)
-    {
-        this.name = somethingToClone.getName();
-        this.population = somethingToClone.getPopulation();
-        this.landMass = somethingToClone.getLandMass();
-        this.medianAge = somethingToClone.getMedianAge();
-    }
+//    public Country(Country somethingToClone)
+//    {
+//        this.name = somethingToClone.getName();
+//        this.population = somethingToClone.getPopulation();
+//        this.landMass = somethingToClone.getLandMass();
+//        this.medianAge = somethingToClone.getMedianAge();
+//    }
 
     public String getName()
     {
